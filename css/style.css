@@ -1,0 +1,736 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  overflow-x: hidden;
+  background-color: #ccc;
+}
+
+.capa{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  top: 0;left: 0;
+}
+
+
+/* Header Inicio y footer general para todas las paginas*/
+.header__inicio {
+  width: 100%;
+  height: 600px;
+  background: #4F80F5;
+  background: -webkit-linear-gradient(to right, rgba(107, 34, 34, 0.593), rgba(136, 54, 58, 0.593)), url(../assets/banners/the_university_of_chicago-wallpaper-1920x1200.jpg);
+  background: linear-gradient(to right, rgba(114, 27, 27, 0.593), rgba(136, 54, 58, 0.593)), url(../assets/banners/the_university_of_chicago-wallpaper-1920x1200.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.header{
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;left: 0;
+}
+.container{
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+.container .btn-menu{
+  float: left;
+  line-height:100px;
+}
+.logo{
+  float: right;
+}
+.container .btn-menu label{
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.container .menu{
+  float: right;
+  line-height: 100px;
+  margin-left: 50px;
+}
+.container .menu a{
+  display: inline-block;
+  padding: 15px;
+  line-height: normal;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  font-size: 15px;
+  margin-right: 5px;
+}
+.container .menu a:hover{
+  border-bottom: 2px solid #611600;
+  padding-bottom: 5px;
+}
+
+/* Footer Inicio */
+.footer__inicio {
+  background: #4F80F5;
+  background: -webkit-linear-gradient(to right, rgba(107, 34, 34, 0.593), rgba(136, 54, 58, 0.593)), url(../assets/banners/atlas_book-wallpaper-1920x1200.jpg);
+  background: linear-gradient(to right, rgba(114, 27, 27, 0.593), rgba(136, 54, 58, 0.593)), url(../assets/banners/atlas_book-wallpaper-1920x1200.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+	/*Menù lateral*/
+	#btn-menu{
+		display: none;
+	}
+	.container-menu{
+		position: absolute;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100vh;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+		width: 100%;
+		max-width: 250px;
+		background: #1c1c1c;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+		height: 100vh;
+		position: relative;
+		transition: all 500ms ease;
+		transform: translateX(-100%);
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #c7c7c7;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+	.cont-menu nav a:hover{
+		border-left: 5px solid #611600;
+		background: #1f1f1f;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 18px;
+	}
+	/*Fin de Menù lateral*/
+
+/* Wave */
+
+  .wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .nav li:hover>ul {
+    display: block;
+  }
+
+/* Título principal NAV */
+header .texto__header {
+    color: #ccc;
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+h1, h2{
+    font-size: 60px;
+}
+
+
+/* Spinner universal */
+
+#contenedorSpinner{
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  -webkit-animation: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  z-index: 10000;
+}
+
+.spinner{
+    border: 8px solid #ccc;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border-left-color: #7d2519;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-animation: spin 1.5s linear infinite;
+    -o-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s ease infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.universityChicago{
+  position: absolute;
+  top: 100px;
+  bottom: 350px;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+/* Body inicio index*/
+.texto__introductorio{
+  text-align: center;
+  color: #ccc;
+  margin: 50px 0;
+  background: #4F80F5;
+    background: -webkit-linear-gradient(to right, rgba(107, 34, 34, 0.593), rgba(136, 54, 58, 0.593)), url(../assets/banners/atlas_book-wallpaper-1920x1200.jpg);
+    background: linear-gradient(to right, rgba(114, 27, 27, 0.593), rgba(136, 54, 58, 0.593)), url(../assets/banners/atlas_book-wallpaper-1920x1200.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding: 50px;
+}
+.video{
+  background-color: #5C4746 ;
+  padding: 20px 0px;
+  margin-bottom: 50px;
+}
+
+.campus__video{
+  margin-left: 28.5%;
+  display: inline-flex;
+
+}
+
+.texto__chicago{
+  margin: 20px 30px;
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 12%;
+}
+.explora{
+  text-align: center;
+  color: #ccc;
+  font-size: 250%;
+}
+.explora__chicago{
+  text-align:center;
+  color: #ccc;
+}
+
+.conteinerPrincipal{
+  margin-left: 15%;
+}
+
+.form__alumnos {
+  width: 100%;
+  max-width: 500px;
+  margin: 0px auto;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color:#6E3532 ;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.input__form{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.texto__alumno{
+  color: #7d2519;
+  text-align: center;
+}
+
+.contra__usuario{
+  margin-top: 20px;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.mostrar{
+  display: inline-flex;
+  justify-content: right;
+  margin-top: 3px;
+}
+
+/* Boton login */
+
+#btnIngresar{
+  background-color: #7d2519;
+  color: #ccc;
+  border-radius: 4px;
+  width: 80px;
+  height: 50px;
+  text-align: center;
+  margin-left: 41%;
+  margin-top: 20px;
+}
+
+
+.contenedor__footer--pagina {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+.contenedor__footer--cont {
+  text-align: center;
+}
+
+.contenedor__footer--cont h4 {
+  color: #fff;
+  border-bottom: 3px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.contenedor__footer--cont p {
+  color: #ccc;
+}
+
+
+
+
+
+
+/* Pagina Admin */
+
+.conteinerUno{
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.usuario{
+  display: inline-flex;
+  margin-left: 20%;
+  justify-content: center;
+  text-align: center;
+  color: #ccc;
+  border-radius: 3px;
+  background-color: #7d2519;
+  font-size: 50px;
+  padding: 10px;
+  margin-bottom: 10%;
+
+}
+
+.container{
+  text-align: center;
+  display: inline-flex;
+  justify-items: center ;
+}
+
+#nombre{
+  margin-left: 26%;
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#nota{
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#boton{
+  padding: 3px;
+  background-color: #7d2519;
+  color: #ccc;
+  border-radius: 4px;
+  display: inline-flex;
+  margin: 0%;
+}
+
+.thead-inverse{
+  display: inline-flex;
+  justify-content: left;
+  padding: 20px;
+}
+
+.nombreAlumno{
+  margin: 20px;
+}
+
+.footer__admin{
+  background: #4F80F5;
+  background: -webkit-linear-gradient(to right, rgba(107, 34, 34, 0.593), rgba(136, 54, 58, 0.593)), url(../assets/banners/atlas_book-wallpaper-1920x1200.jpg);
+  background: linear-gradient(to right, rgba(114, 27, 27, 0.593), rgba(136, 54, 58, 0.593)), url(../assets/banners/atlas_book-wallpaper-1920x1200.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 100px;
+}
+
+
+
+/* Materias page */
+
+.materias{
+  width: 100%;
+  max-width: 1200px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.materias .card{
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.materias .card:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.materias .card img{
+  width: 330px;
+  height: 220px;
+}
+
+
+.materias .card h4{
+  font-weight: 600;
+}
+
+.materias .card p{
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.materias .card a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.back{
+  margin: auto;
+}
+
+.footer__materias {
+  background: #4F80F5;
+  background: -webkit-linear-gradient(to right, rgba(107, 34, 34, 0.593), rgba(136, 54, 58, 0.593)), url(../assets/banners/atlas_book-wallpaper-1920x1200.jpg);
+  background: linear-gradient(to right, rgba(114, 27, 27, 0.593), rgba(136, 54, 58, 0.593)), url(../assets/banners/atlas_book-wallpaper-1920x1200.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 100px;
+}
+
+
+
+
+
+/* ADMIN pages */
+
+.header__admin{
+  width: 100%;
+  height: 600px;
+  background: #4F80F5;
+  background: -webkit-linear-gradient(to right, rgba(107, 34, 34, 0.593), rgba(136, 54, 58, 0.593)), url(../assets/banners/.jpg);
+  background: linear-gradient(to right, rgba(114, 27, 27, 0.593), rgba(136, 54, 58, 0.593)), url(../assets/banners/book.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+/* Alumnos Pages */
+#btnObtener{
+  color: #ccc;
+  background-color: #7d2519;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 15px;
+  position: relative;
+  margin-top: 5%;
+  margin-left: 24px;
+}
+
+#btnObtenerBio{
+  color: #ccc;
+  background-color: #7d2519;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 15px;
+  position: relative;
+  margin-top: 5%;
+  margin-left: 24px;
+}
+
+#btnObtenerMat{
+  color: #ccc;
+  background-color: #7d2519;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 15px;
+  position: relative;
+  margin-top: 5%;
+  margin-left: 24px;
+}
+
+.materiasAlumnos{
+  display: inline-block;
+  position: relative;
+  margin-left: 45%;
+  margin-right: 45%;
+}
+.materiasAlumnos::after, .materiasAlumnos::before{
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 3px;
+  background-color: #1f1f1f;
+  top: 0.6em;
+}
+
+.materiasAlumnos::before{
+  left: -140px;
+}
+.materiasAlumnos::after{
+  right: -140px;
+}
+
+.materiasCuatri{
+  color:#6E3532;
+}
+
+/* Matematicas */
+.materiasAlumnosMat{
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  margin-left: 45%;
+  margin-right: 45%;
+}
+.materiasAlumnosMat::after, .materiasAlumnosMat::before{
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 3px;
+  background-color: #1f1f1f;
+  top: 0.6em;
+}
+
+.materiasAlumnosMat::before{
+  left: -140px;
+}
+.materiasAlumnosMat::after{
+  right: -140px;
+}
+
+/* Biologia */
+.materiasAlumnosBio{
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  margin-left: 45%;
+  margin-right: 45%;
+}
+.materiasAlumnosBio::after, .materiasAlumnosBio::before{
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 3px;
+  background-color: #1f1f1f;
+  top: 0.6em;
+}
+
+.materiasAlumnosBio::before{
+  left: -140px;
+}
+.materiasAlumnosBio::after{
+  right: -140px;
+}
+
+.alumnosCargados{
+  display: block;
+  margin-left: 26%;
+}
+
+.alumnosCargados ,
+.containerAlumnos{
+  position: relative;
+}
+
+tr{
+  display: flex;
+}
+th{
+  padding: 5px;
+  margin: 20px;
+  color: #6E3532;
+  border: #611600;
+}
+
+
+
+.row{
+  margin-left: 10.2%;
+  display: flex;
+  flex-direction: row;
+}
+
+/* form */
+#contenedor{
+  -webkit-border-radius: 10px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -moz-border-radius: 10px;
+  -moz-border-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -o-border-radius: 10px;
+  -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  font-family: sans-serif;
+  font-size: 18px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 190px;
+}
+
+.campo{
+  border: outset 6px #6F7EEB;
+  font-size: 12px;
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 150px;
+}
+
+.boton{
+  background: #FF0098;
+  border: solid 0;
+  color: #fff;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.errores{
+  -webkit-boxshadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background: red;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  display: none;
+  font-size: 14px;
+  margin-top: -50px;
+  margin-left: 180px;
+  padding: 10px;
+  position: absolute;
+}
+
+/* Page Calificaiones */
+
+#btnObtenerAlumno{
+  color: #ccc;
+  background-color: #7d2519;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 15px;
+  position: relative;
+  margin-top: 5%;
+  margin-left: 24px;
+}
+
+#btnObtenerBioAlumno{
+  color: #ccc;
+  background-color: #7d2519;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 15px;
+  position: relative;
+  margin-top: 5%;
+  margin-left: 24px;
+}
+
+#btnObtenerMatAlumno{
+  color: #ccc;
+  background-color: #7d2519;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 15px;
+  position: relative;
+  margin-top: 5%;
+  margin-left: 24px;
+}
+

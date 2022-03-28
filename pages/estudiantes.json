@@ -1,0 +1,44 @@
+[
+    {
+        "nombre": "Emiliano ",
+        "apellido": " García",
+        "nota1": " 9",
+        "nota2": " 8",
+        "nota3": " 8"
+    },
+    {
+        "nombre": "Antonella ",
+        "apellido": " Iznardo",
+        "nota1": " 5",
+        "nota2": " 8",
+        "nota3": " 7"
+    },
+    {
+        "nombre": "Francisco ",
+        "apellido": " Bornengo",
+        "nota1": " 3",
+        "nota2": " 3",
+        "nota3": "Desaprobado"
+    },
+    {
+        "nombre": "Emilia ",
+        "apellido": " Montero",
+        "nota1": " 9",
+        "nota2": " 9",
+        "nota3": " 10"
+    },
+    {
+        "nombre": "Agustín ",
+        "apellido": " Shultz",
+        "nota1": " 5",
+        "nota2": " 5",
+        "nota3": " 7"
+    },
+    {
+        "nombre": "Pilar ",
+        "apellido": " Bardagí",
+        "nota1": " 4",
+        "nota2": " 4",
+        "nota3": " 4"
+    }
+]

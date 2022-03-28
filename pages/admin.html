@@ -1,0 +1,129 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../boots/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/logo/1200px-University_of_Chicago_shield.svg.png">
+    <link rel="import"
+        href='https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap'>
+    <title>UC Profesores</title>
+</head>
+
+<body>
+    <!-- Spinner -->
+    <div id="contenedorSpinner">
+        <div class="spinner"></div>
+    </div>
+    <!-- <div class="spinner"></div> -->
+    <header class="header__admin">
+        <a class="logo" href="../index.html"><img
+                src="../assets/logo/gratis-png-universidad-de-chicago-chicago-cimarrones-baloncesto-masculino-emblema-logo-universidad-antigua-escuela.png"
+                alt="logo pag" width="321px" height="120px"></a>
+        <header class="header">
+            <div class="container">
+                <div class="btn-menu">
+                    <label for="btn-menu">☰</label>
+                </div>
+                <nav class="menu">
+                    <a href="../index.html">Paginal Principal</a>
+                    <a href="../pages/admin.html">Cargar Notas</a>
+                    <a href="../pages/materias.html">Materias</a>
+                    <a href="../pages/alumnos.html">Alumnos</a>
+                    <a href="#">Contacto</a>
+                </nav>
+            </div>
+        </header>
+        <div class="capa"></div>
+        <!--	--------------->
+        <input type="checkbox" id="btn-menu">
+        <div class="container-menu">
+            <div class="cont-menu">
+                <nav>
+                    <a href="#">Portafolio</a>
+                    <a href="#">Servicios</a>
+                    <a href="#">Horarios</a>
+                    <a href="#">Profesores</a>
+                    <a href="#">Evaluaciones</a>
+                    <a href="#">UC Chicago</a>
+                </nav>
+                <label for="btn-menu">✖️</label>
+            </div>
+        </div>
+        <section class="texto__header">
+            <h1>Bienvenido Profesor</h1>
+            <h2>UChicago Account</h2>
+        </section>
+        <div class="wave">
+            <div style="height: 150px ; overflow: hidden;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"></svg>
+                <path fill="#0099ff" fill-opacity="1" d="M0,32L1440,32L1440,0L0,0Z"></path>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <div class="containerUno">
+        <p class="usuario">Ingrese al alumno y cargue su nota</p>
+        <form id="formDatos" action="">
+            <input id="nombre" type="text" placeholder="Ingrese nombre">
+            <input id="apellido" type="text" placeholder="Ingrese apellido">
+            <input id="edad" type="text" placeholder="Ingrese nota">
+            <button id="boton" type="reset" onclick="capturar();">Agregar</button>
+        </form>
+    </div>
+    <div class="container">
+        <table id="tabla">
+            <thead class="thead-inverse">
+                <tr>
+                    <th><b>Nombre</b></th>
+                    <th><b>Apellido</b></th>
+                    <th><b>Nota</b></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <div class="row">
+                        <td></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row">
+                        <td></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row">
+                        <td></td>
+                    </div>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer__admin">
+        <div class="contenedor__footer--pagina">
+            <div class="contenedor__footer--cont">
+                <h4>Teléfono</h4>
+                <p>+17737021234</p>
+            </div>
+            <div class="contenedor__footer--cont">
+                <h4>Ubicación</h4>
+                <p>5801 S Ellis Ave, Chicago, Estados Unidos</p>
+            </div>
+            <div class="contenedor__footer--cont">
+                <h4>Email</h4>
+                <p>chicagouniversity@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/spin.js"></script>
+    <script src="../js/cargarNota.js"></script>
+</body>
+
+</html>

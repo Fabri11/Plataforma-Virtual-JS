@@ -1,0 +1,105 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="boots/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/logo/1200px-University_of_Chicago_shield.svg.png">
+    <title>University of Chicago</title>
+</head>
+
+<body>
+    <!-- Creacion de un Spinner -->
+    <div id="contenedorSpinner">
+        <div class="spinner"></div>
+        <img class="UniversityChicago" src="assets/logo/1200px-University_of_Chicago_shield.svg.png" width="130px"
+            height="130" alt="">
+    </div>
+    <header class="header__inicio">
+        <a class="logo" href="index.html"><img
+                src="assets/logo/gratis-png-universidad-de-chicago-chicago-cimarrones-baloncesto-masculino-emblema-logo-universidad-antigua-escuela.png"
+                alt="logo pag" width="321px" height="120px"></a>
+        <section class="texto__header">
+            <h1>Inicie Sesion en su </h1>
+            <h2>Cuenta de UChicago</h2>
+        </section>
+        <div class="wave">
+            <div style="height: 150px ; overflow: hidden;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"></svg>
+                <path fill="#0099ff" fill-opacity="1" d="M0,32L1440,32L1440,0L0,0Z"></path>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <div class="conteinerPrincipal">
+        <div class="row">
+            <div class="col-8">
+                <div>
+                    <h2 class="texto__alumno">Ingresar como Alumno ó Profesor</h2>
+                </div>
+                <form class="form__alumnos">
+
+                    <div class="contra__usuario">
+                        <input type="text" required id="txtCorreo" required placeholder="Ingrese su correo">
+                    </div>
+                    <div class="contra__usuario">
+                        <input type="password" id="txtContraseña" required placeholder="Ingrese su contraseña">
+                    </div>
+                    <div>
+                        <button type="button" id="btnIngresar">Ingresar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <h2 class="texto__introductorio">¡Conocé poco de la gran ciudad!</h2>
+        </div>
+    </div>
+    <section class="video">
+        <div>
+            <div class="campus__video">
+                <iframe width="633" height="357" src="https://www.youtube.com/embed/P-xlixF7B2U"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="texto__chicago">
+                <h2 class="explora">Explorá Chicago</h2>
+                <p class="explora__chicago"> Descubrí la ciudad global que University Chicago llama hogar, llena de
+                    inspiración, innovación e innumerables oportunidades para explorar.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer__inicio">
+        <div class="contenedor__footer--pagina">
+            <div class="contenedor__footer--cont">
+                <h4>Teléfono</h4>
+                <p>+17737021234</p>
+            </div>
+            <div class="contenedor__footer--cont">
+                <h4>Ubicación</h4>
+                <p>5801 S Ellis Ave, Chicago, Estados Unidos</p>
+            </div>
+            <div class="contenedor__footer--cont">
+                <h4>Email</h4>
+                <p>chicagouniversity@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/spin.js"></script>
+    <script src="js/interfazSesion.js"></script>
+    <script src="js/inicioSesion.js"></script>
+</body>
+
+</html>

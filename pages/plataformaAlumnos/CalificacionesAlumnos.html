@@ -1,0 +1,146 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../boots/css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="shortcut icon" href="../../assets/logo/1200px-University_of_Chicago_shield.svg.png">
+    <title>University Of Chicago</title>
+</head>
+
+<body>
+    <!-- Spinner -->
+    <div id="contenedorSpinner">
+        <div class="spinner"></div>
+    </div>
+    <header class="header__admin">
+        <a class="logo" href="../index.html"><img
+                src="../../assets/logo/gratis-png-universidad-de-chicago-chicago-cimarrones-baloncesto-masculino-emblema-logo-universidad-antigua-escuela.png"
+                alt="logo pag" width="321px" height="120px"></a>
+        <header class="header">
+            <div class="container">
+                <div class="btn-menu">
+                    <label for="btn-menu">☰</label>
+                </div>
+                <nav class="menu">
+                    <a href="../../index.html">Página Principal</a>
+                    <a href="../plataformaAlumnos/plataforma.html">Inicio</a>
+                    <a href="../plataformaAlumnos/materiasAlumnos.html">Materias</a>
+                    <a href="../plataformaAlumnos/CalificacionesAlumnos.html">Calificaciones</a>
+                    <a href="#">Contacto</a>
+                </nav>
+            </div>
+        </header>
+        <div class="capa"></div>
+        <!--	--------------->
+        <input type="checkbox" id="btn-menu">
+        <div class="container-menu">
+            <div class="cont-menu">
+                <nav>
+                    <a href="#">Portafolio</a>
+                    <a href="#">Servicios</a>
+                    <a href="#">Horarios</a>
+                    <a href="#">Profesores</a>
+                    <a href="#">Evaluaciones</a>
+                    <a href="#">UC Chicago</a>
+                </nav>
+                <label for="btn-menu">✖️</label>
+            </div>
+        </div>
+        <section class="texto__header">
+            <h1>Alumnos</h1>
+            <h2>Registrados</h2>
+        </section>
+        <div class="wave">
+            <div style="height: 150px; overflow: hidden;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"></svg>
+                <path fill="#0099ff" fill-opacity="1" d="M0,32L1440,32L1440,0L0,0Z"></path>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <div class="containerAlumnos">
+        <div>
+            <button class="btnJson" id="btnObtenerAlumno">Obtener</button>
+
+            <table class="alumnosCargados">
+                <thead>
+                    <tr>
+                        <h4 class="materiasAlumnos">Geografía</h4>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Primer Parcial </th>
+                        <th>Segundo Parcial</th>
+                        <th>Examen Final</th>
+                    </tr>
+                </thead>
+                <tbody id="cargaAlumno">
+
+                </tbody>
+            </table>
+
+            <button class="btnJson" id="btnObtenerBioAlumno">Obtener</button>
+            <table class="alumnosCargados">
+                <thead>
+                    <tr>
+                        <h4 class="materiasAlumnosBio">Biología</h4>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Primer Parcial </th>
+                        <th>Segundo Parcial</th>
+                        <th>Examen Final</th>
+                    </tr>
+                </thead>
+                <tbody id="cargaBioAlumno">
+
+                </tbody>
+            </table>
+
+            <button class="btnJson" id="btnObtenerMatAlumno">Obtener</button>
+            <table class="alumnosCargados">
+                <thead>
+                    <tr>
+                        <h4 class="materiasAlumnosMat">Matemáticas</h4>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Primer Parcial </th>
+                        <th>Segundo Parcial</th>
+                        <th>Examen Final</th>
+                    </tr>
+                </thead>
+                <tbody id="cargaMatAlumno">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer__inicio">
+        <div class="contenedor__footer--pagina">
+            <div class="contenedor__footer--cont">
+                <h4>Teléfono</h4>
+                <p>+17737021234</p>
+            </div>
+            <div class="contenedor__footer--cont">
+                <h4>Ubicación</h4>
+                <p>5801 S Ellis Ave, Chicago, Estados Unidos</p>
+            </div>
+            <div class="contenedor__footer--cont">
+                <h4>Email</h4>
+                <p>chicagouniversity@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/biologyAlumno.js"></script>
+    <script src="../../js/geographyAlumno.js"></script>
+    <script src="../../js/mathAlumno.js"></script>
+    <script src="../../js/spin.js"></script>
+</body>
+
+</html>
