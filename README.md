@@ -4,7 +4,7 @@ IMPORTANTE: Acceder mediante estos usuarios.
 Profesor: .-Email:profesor@gmail.com .- contraseña:profesor
 Alumno: .- Email:alumno@gmail.com .- contraseña:alumno
 
-👩‍🏫Proyecto Aula virtual para estudiantes nivel secundario y profesores.👨‍🏫
+👩‍🏫Proyecto Aula virtual para estudiantes nivel universitario y profesores.👨‍🏫
 ¿Qué podremos encontrar en el mismo? 📖
 
 Alumnos👩‍💻👨‍💻:
